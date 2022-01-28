@@ -1,14 +1,27 @@
-function nextInLine(arr, item) {
+var names = ["Hole in one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
 
-  arr.push(item);
+function golfScore(par, strokes) {
 
-  item = arr.shift();
+  if (strokes === 1) {
+    return names[0];
+  }
 
-  return item;
+  var score = strokes - par;
+
+  if (score <= -2) {
+    return names[1];
+  } else if (score === -1) {
+    return names[2];
+  } else if (score === 0) {
+    return names[3];
+  } else if (score === 1) {
+    return names[4];
+  } else if (score === 2) {
+    return names[5];
+  } else {
+    return names[6];
+  }
+
 }
 
-var testArr = [1, 2, 3, 4, 5];
-
-console.log("Before: " + JSON.stringify(testArr));
-console.log(nextInLine(testArr, 6));
-console.log("After: " + JSON.stringify(testArr));
+console.log(golfScore(6, 5));
