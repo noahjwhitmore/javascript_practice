@@ -1,8 +1,10 @@
-let firstName = 'Noah';
-let thirdLetter = firstName[2];
+function wordBlanks(noun, adjective, verb, adverb) {
+  var result = "";
+  result += "I was walking around with my " + noun + ", when a " + adjective + " " + noun + " started to " + verb + " towards me very " + adverb;
 
-console.log('Third letter is', thirdLetter);
+  return result;
+}
 
-let lastLetter = firstName[firstName.length - 1];
+let phrase = wordBlanks("dog", "big", "run", "quickly");
 
-console.log('last letter is', lastLetter);
+console.log(phrase);
