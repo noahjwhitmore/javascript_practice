@@ -1,26 +1,8 @@
-function caseInSwitch(val) {
-  var answer = "";
-
-  switch (val) {
-    case 1:
-      answer = "alpha";
-      break;
-    case 2:
-      answer = "beta";
-      break;
-    case 3:
-      answer = "cappa";
-      break;
-    case 4:
-      answer = "delta";
-      break;
-    default:
-      answer = "Something else";
-      break;
-  }
-
-  return answer;
-
+var myDog = {
+  "name": "Noah",
+  "legs": 3,
+  "tails": 2,
+  "friends": []
 }
 
-console.log(caseInSwitch(23));
+console.log(myDog.name);
