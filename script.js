@@ -14,10 +14,13 @@ function caseInSwitch(val) {
     case 4:
       answer = "delta";
       break;
+    default:
+      answer = "Something else";
+      break;
   }
 
   return answer;
 
 }
 
-console.log(caseInSwitch(4));
+console.log(caseInSwitch(23));
