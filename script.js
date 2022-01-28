@@ -1,10 +1,3 @@
-function wordBlanks(noun, adjective, verb, adverb) {
-  var result = "";
-  result += "I was walking around with my " + noun + ", when a " + adjective + " " + noun + " started to " + verb + " towards me very " + adverb;
+let myArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [[10, 11, 12], 13, 14]];
 
-  return result;
-}
-
-let phrase = wordBlanks("dog", "big", "run", "quickly");
-
-console.log(phrase);
+console.log(myArray[2][1]);
