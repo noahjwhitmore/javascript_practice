@@ -1,24 +1,20 @@
-var theArray = ["Stimpson", "J", "cat"];
+var myGlobal = 50;
 
-// Push item to array
-theArray.push(["happy", "happy", "joy", "joy"]);
+function fun1() {
+  var oopsGlobal = 5;
+}
 
-console.log(theArray);
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal is a global variable, and it is equal to " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += "\noopsGlobal is also global, and it is equal to " + oopsGlobal;
+  }
 
-// Pop to remove last item, the item removed is returned
-var removedFromArray = theArray.pop();
+  console.log(output);
+}
 
-console.log("removed", removedFromArray);
-console.log("the array that's left", theArray);
-
-
-// Shift to remove the first array item, removed item is returned
-
-var removedFromArray = theArray.shift();
-console.log("removed", removedFromArray);
-console.log("the array that's left", theArray);
-
-// Unshift to add item to beginning of array
-
-theArray.unshift("Homer");
-console.log(theArray);
+fun1();
+fun2();
