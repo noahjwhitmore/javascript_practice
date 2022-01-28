@@ -1,3 +1,12 @@
-let myArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [[10, 11, 12], 13, 14]];
+var theArray = ["Stimpson", "J", "cat"];
 
-console.log(myArray[2][1]);
+// Push item to array
+theArray.push(["happy", "happy", "joy", "joy"]);
+
+console.log(theArray);
+
+// Pop to remove last item, the item removed is returned
+var removedFromArray = theArray.pop();
+
+console.log("removed", removedFromArray);
+console.log("the array that's left", theArray);
